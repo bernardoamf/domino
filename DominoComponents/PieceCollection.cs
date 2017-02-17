@@ -53,6 +53,18 @@ namespace DominoComponents
             return unassigned;
         }
 
+        public int getUnplayedPieceCount()
+        {
+            int returnValue = 0;
+            foreach (Piece p in pieces)
+            {
+                if (!p.played)
+                    returnValue++;
+            }
+
+            return returnValue;
+        }
+
         public void markPickedPiece(Piece p)
         {
             pieces.ElementAt(p.id).picked = true;
@@ -60,10 +72,11 @@ namespace DominoComponents
 
         public bool hasDoubleSix()
         {
-            bool returnValue;
+            bool returnValue = false;
             foreach (Piece p in pieces)
             {
-                returnValue = p.isDobuleSix();
+                if((returnValue = p.isDobuleSix()))
+                    break;
             }
             return returnValue;
         }

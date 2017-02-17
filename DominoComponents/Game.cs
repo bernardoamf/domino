@@ -80,9 +80,6 @@ namespace DominoComponents
             return returnString;
         }
 
-        internal int GetPlayerWithDoubleSix()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

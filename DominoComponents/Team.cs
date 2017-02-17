@@ -52,7 +52,10 @@ namespace DominoComponents
             foreach (Player p in players)
             {
                 if (p.hasDoubleSix())
+                {
                     playerWithDoubleSix = p.id;
+                    break;
+                }
             }
             return playerWithDoubleSix;
         }

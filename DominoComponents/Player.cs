@@ -57,14 +57,7 @@ namespace DominoComponents
 
         public int getUnplayedPieceCount()
         {
-            int returnValue = 0;
-            foreach (Piece p in playerPieces)
-            {
-                if (!p.played)
-                    returnValue++;
-            }
-
-            return returnValue;
+            return playerPieces.getUnplayedPieceCount();
         }
 
         public bool hasDoubleSix()

@@ -23,6 +23,7 @@ namespace DominoComponents
             m.startNewGame();
             Game g = m.getGame();
             Console.WriteLine(g.ToString());
+            Console.Read();
             Console.WriteLine(g.GetPlayerWithDoubleSix());
         }
 

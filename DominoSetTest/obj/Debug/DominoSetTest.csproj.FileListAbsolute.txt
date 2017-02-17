@@ -3,3 +3,8 @@ c:\users\bernardm\documents\visual studio 2013\Projects\Domino\DominoSetTest\bin
 c:\users\bernardm\documents\visual studio 2013\Projects\Domino\DominoSetTest\obj\Debug\DominoSetTest.csprojResolveAssemblyReference.cache
 c:\users\bernardm\documents\visual studio 2013\Projects\Domino\DominoSetTest\obj\Debug\DominoSetTest.dll
 c:\users\bernardm\documents\visual studio 2013\Projects\Domino\DominoSetTest\obj\Debug\DominoSetTest.pdb
+C:\git\domino\DominoSetTest\bin\Debug\DominoSetTest.dll
+C:\git\domino\DominoSetTest\bin\Debug\DominoSetTest.pdb
+C:\git\domino\DominoSetTest\obj\Debug\DominoSetTest.csprojResolveAssemblyReference.cache
+C:\git\domino\DominoSetTest\obj\Debug\DominoSetTest.dll
+C:\git\domino\DominoSetTest\obj\Debug\DominoSetTest.pdb
