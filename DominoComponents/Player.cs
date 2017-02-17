@@ -9,8 +9,9 @@ namespace DominoComponents
 {
     class Player
     {
-        string name { get; set; }
+        public string name { get; set; }
         public int id { get; set; }
+        public int teamId { get; set; }
 
         PieceCollection playerPieces;
 
@@ -20,9 +21,11 @@ namespace DominoComponents
             set { playerPieces = value; }
         }
 
-        public Player(string playerName)
+        public Player(int id, string playerName, int teamId)
         {
-            name = playerName;
+            this.id = id;
+            this.name = playerName;
+            this.teamId = teamId;
             playerPieces = new PieceCollection();
         }
 

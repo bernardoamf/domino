@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,13 +10,13 @@ namespace DominoComponents
     class Game
     {
         public int gameId { get; set; }
-        List<Team> teams;
         DominoSet dominoSet;
+        List<Player> players {get; set;}
 
-        public Game(List<Team> teamList, int id)
+        public Game(int id, List<Player> playerList)
         {
             this.gameId = id;
-            teams = teamList;
+            this.players = playerList;
             dominoSet = new DominoSet();
         }
 
@@ -24,58 +25,58 @@ namespace DominoComponents
             int currentPlayerPicking = firstPlayerToPick;
             for (int i = 0; i <= 3; i++)
             {
-                if (currentPlayerPicking < 2)
-                {
-                    teams.ElementAt(0).getPlayerById(currentPlayerPicking).pickPieces(dominoSet);
-                    //Console.WriteLine(teams.ElementAt(0).getPlayerById(currentPlayerPicking).PlayerPieces.ToString());
-                }
-                else
-                {
-                    teams.ElementAt(1).getPlayerById(currentPlayerPicking - 2).pickPieces(dominoSet);
-                    //Console.WriteLine(teams.ElementAt(1).getPlayerById(currentPlayerPicking - 2).PlayerPieces.ToString());
-                }
+                players.ElementAt(currentPlayerPicking).pickPieces(dominoSet);
                 currentPlayerPicking++;
                 if (currentPlayerPicking == 4)
                     currentPlayerPicking = 0;
             }
         }
 
-        public void play(int firstPlayertoPlay)
+        public int play(int firstPlayertoPlay)
         {
             int currentPlayer = firstPlayertoPlay;
-            Team currentTeam;
-            while (!teams.ElementAt(0).checkPlayerWithNoPieces() && !teams.ElementAt(1).checkPlayerWithNoPieces())
+            while (!CheckPlayerWithoutPieces())
             {
-                if (currentPlayer < 2)
-                    currentTeam = teams.ElementAt(0);
-                else
-                    currentTeam = teams.ElementAt(1);
-
+                Debug.WriteLine("Turn: " + players.Find(a => a.id == firstPlayertoPlay).name);
+                break;
             }
+            return -1;
         }
 
-        public int GetPlayerWithDoubleSix()
+        public int GetPlayerIdWithDoubleSix()
         {
             int playerWithDoubleSix = -1;
-            foreach (Team t in teams)
+            foreach (Player p in players)
             {
-                playerWithDoubleSix = t.getPlayerWithDoubleSix();
-                if (playerWithDoubleSix != -1)
+                if (p.hasDoubleSix())
                 {
-                    if (t.teamNumber == 1)
-                        playerWithDoubleSix = playerWithDoubleSix + 2;
+                    playerWithDoubleSix = p.id;
                     break;
                 }
             }
             return playerWithDoubleSix;
         }
 
-        public string ToString()
+        public bool CheckPlayerWithoutPieces()
+        {
+            bool returnValue = false;
+            foreach (Player p in players)
+            {
+                if (p.getUnplayedPieceCount() == 0)
+                {
+                    returnValue = true;
+                    break;
+                }
+            }
+            return returnValue;
+        }
+
+         public string ToString()
         {
             string returnString = String.Empty;
-            foreach (Team t in teams)
+            foreach (Player p in players)
             {
-                returnString = returnString + t.ToString();
+                returnString = returnString + p.ToString() + "\r\n";
             }
             return returnString;
         }

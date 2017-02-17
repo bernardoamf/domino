@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ namespace DominoComponents
     {
         static void Main(string[] args)
         {
+            Trace.Listeners.Add(new TextWriterTraceListener(Console.Out));
 
             testMatchCreation();
             Console.Read(); 
@@ -17,14 +19,18 @@ namespace DominoComponents
 
         static void testMatchCreation()
         {
-            Team t1 = new Team(1, "Bichos", new Player("Bernardo"), new Player("Alejandro"));
-            Team t2 = new Team(1, "Tipos", new Player("Jose"), new Player("Xan"));
-            Match m = new Match(t1, t2);
+            Player p1 = new Player(1, "Bernardo",1);
+            Player p2 = new Player(2, "Alejandro",1);
+            Player p3 = new Player(3, "Jose",2);
+            Player p4 = new Player(4, "Xan",2);
+            Match m = new Match(p1, p2, p3, p4);
             m.startNewGame();
             Game g = m.getGame();
-            Console.WriteLine(g.ToString());
+            Debug.WriteLine(g.ToString());
+            //Console.Read();
+            Debug.WriteLine(g.GetPlayerIdWithDoubleSix());
+            m.playCurrentGame();
             Console.Read();
-            Console.WriteLine(g.GetPlayerWithDoubleSix());
         }
 
         static void testSetCreation()
