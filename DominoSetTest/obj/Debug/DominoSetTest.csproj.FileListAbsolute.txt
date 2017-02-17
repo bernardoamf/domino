@@ -1,0 +1,5 @@
+c:\users\bernardm\documents\visual studio 2013\Projects\Domino\DominoSetTest\bin\Debug\DominoSetTest.dll
+c:\users\bernardm\documents\visual studio 2013\Projects\Domino\DominoSetTest\bin\Debug\DominoSetTest.pdb
+c:\users\bernardm\documents\visual studio 2013\Projects\Domino\DominoSetTest\obj\Debug\DominoSetTest.csprojResolveAssemblyReference.cache
+c:\users\bernardm\documents\visual studio 2013\Projects\Domino\DominoSetTest\obj\Debug\DominoSetTest.dll
+c:\users\bernardm\documents\visual studio 2013\Projects\Domino\DominoSetTest\obj\Debug\DominoSetTest.pdb

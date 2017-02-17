@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DominoComponents", "DominoComponents\DominoComponents.csproj", "{CDDA55E7-5640-483E-8321-4F2C91E5389A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DominoSetTest", "DominoSetTest\DominoSetTest.csproj", "{C394BB95-4A13-4774-B88B-1135AB2C08DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDDA55E7-5640-483E-8321-4F2C91E5389A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDDA55E7-5640-483E-8321-4F2C91E5389A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDDA55E7-5640-483E-8321-4F2C91E5389A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CDDA55E7-5640-483E-8321-4F2C91E5389A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CDDA55E7-5640-483E-8321-4F2C91E5389A}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{CDDA55E7-5640-483E-8321-4F2C91E5389A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDDA55E7-5640-483E-8321-4F2C91E5389A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDDA55E7-5640-483E-8321-4F2C91E5389A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CDDA55E7-5640-483E-8321-4F2C91E5389A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CDDA55E7-5640-483E-8321-4F2C91E5389A}.Release|Win32.ActiveCfg = Release|Any CPU
+		{C394BB95-4A13-4774-B88B-1135AB2C08DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C394BB95-4A13-4774-B88B-1135AB2C08DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C394BB95-4A13-4774-B88B-1135AB2C08DA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C394BB95-4A13-4774-B88B-1135AB2C08DA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C394BB95-4A13-4774-B88B-1135AB2C08DA}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{C394BB95-4A13-4774-B88B-1135AB2C08DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C394BB95-4A13-4774-B88B-1135AB2C08DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C394BB95-4A13-4774-B88B-1135AB2C08DA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C394BB95-4A13-4774-B88B-1135AB2C08DA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C394BB95-4A13-4774-B88B-1135AB2C08DA}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+c:\users\bernardm\documents\visual studio 2013\Projects\Domino\DominoComponents\bin\Debug\DominoComponents.exe.config
+c:\users\bernardm\documents\visual studio 2013\Projects\Domino\DominoComponents\bin\Debug\DominoComponents.exe
+c:\users\bernardm\documents\visual studio 2013\Projects\Domino\DominoComponents\bin\Debug\DominoComponents.pdb
+c:\users\bernardm\documents\visual studio 2013\Projects\Domino\DominoComponents\obj\Debug\DominoComponents.csprojResolveAssemblyReference.cache
+c:\users\bernardm\documents\visual studio 2013\Projects\Domino\DominoComponents\obj\Debug\DominoComponents.exe
+c:\users\bernardm\documents\visual studio 2013\Projects\Domino\DominoComponents\obj\Debug\DominoComponents.pdb
